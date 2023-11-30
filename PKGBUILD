@@ -51,6 +51,7 @@ prepare() {
     _update DEFAULT_HOSTNAME alarm
   )
   sed -i "${pattern}" .config
+  make olddefconfig
 
   make -s kernelrelease > version
   echo "Prepared $pkgbase version $(<version)"
