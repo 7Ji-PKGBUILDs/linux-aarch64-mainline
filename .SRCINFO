@@ -1,0 +1,32 @@
+pkgbase = linux-aarch64-mainline
+	pkgdesc = Linux
+	pkgver = 6.7.rc3
+	pkgrel = 1
+	url = https://kernel.org
+	arch = aarch64
+	license = GPL2
+	makedepends = kmod
+	makedepends = bc
+	makedepends = dtc
+	makedepends = uboot-tools
+	options = !strip
+	source = git+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git#tag=v6.7-rc3
+	cksums = SKIP
+
+pkgname = linux-aarch64-mainline
+	pkgdesc = The Linux kernel and modules - AArch64 multi platform with every possible module
+	depends = coreutils
+	depends = initramfs
+	depends = kmod
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = KSMBD-MODULE
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+	backup = etc/mkinitcpio.d/linux-aarch64-mainline.preset
+
+pkgname = linux-aarch64-mainline-headers
+	pkgdesc = Headers and scripts for building modules for the Linux kernel - AArch64 multi platform with every possible module
+	depends = pahole
