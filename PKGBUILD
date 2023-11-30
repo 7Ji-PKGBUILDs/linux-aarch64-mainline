@@ -12,7 +12,7 @@ pkgdesc=Linux
 url='https://kernel.org'
 arch=(aarch64)
 license=(GPL2)
-makedepends=('kmod' 'bc' 'dtc' 'uboot-tools')
+makedepends=('kmod' 'bc' 'dtc' 'uboot-tools' 'cpio')
 options=(!strip)
 source=(git+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git#tag="${_tag}")
 cksums=(SKIP)
