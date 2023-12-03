@@ -104,7 +104,7 @@ _package() {
     DEPMOD=/doesnt/exist modules_install  # Suppress depmod
 
   echo "Installing DTBs..."
-  make INSTALL_DTBS_PATH="${pkgdir}/boot/dtbs/${pkgase}" dtbs_install
+  make INSTALL_DTBS_PATH="${pkgdir}/boot/dtbs/${pkgbase}" dtbs_install
 
   # remove build link
   rm "$modulesdir"/build
