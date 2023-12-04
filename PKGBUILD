@@ -1,7 +1,7 @@
 # Maintainer: 7Ji <pugokushin@gmail.com>
 
 _desc=' AArch64 multi platform with every possible module'
-_tag_nov=6.7-rc3
+_tag_nov=6.7-rc4
 _tag=v"${_tag_nov}"
 _srcname=linux
 pkgbase=linux-aarch64-mainline
